@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Colour tokens as "R G B" so Tailwind's opacity modifiers (bg-success/15)
+ * keep working. Light first; the .dark block takes over when the app's colour
+ * scheme is dark (My account → Theme). Mirrored in src/constants/theme.ts.
+ */
+:root {
+  --c-brand: 13 59 46;
+  --c-accent: 124 160 129;
+  --c-accent-dark: 93 121 111;
+  --c-accent-light: 169 196 173;
+  --c-accent-tint: 233 240 234;
+  --c-canvas: 243 246 244;
+  --c-surface: 255 255 255;
+  --c-line: 227 233 229;
+  --c-line-soft: 237 241 238;
+  --c-ink-1: 23 34 29;
+  --c-ink-2: 91 102 96;
+  --c-ink-3: 152 162 156;
+  --c-success: 30 158 90;
+  --c-success-tint: 227 244 234;
+  --c-warning: 178 94 0;
+  --c-warning-tint: 251 239 223;
+  --c-danger: 199 38 59;
+  --c-danger-tint: 251 230 233;
+  --c-info: 46 95 163;
+  --c-info-tint: 229 237 248;
+  --c-gold: 224 161 0;
+  --c-gold-tint: 252 243 217;
+}
+
+.dark:root {
+  --c-brand: 31 122 92;
+  --c-accent: 124 160 129;
+  --c-accent-dark: 143 179 154;
+  --c-accent-light: 169 196 173;
+  --c-accent-tint: 29 43 36;
+  --c-canvas: 14 19 17;
+  --c-surface: 22 29 26;
+  --c-line: 39 49 44;
+  --c-line-soft: 30 39 35;
+  --c-ink-1: 230 236 233;
+  --c-ink-2: 161 172 166;
+  --c-ink-3: 111 123 117;
+  --c-success: 60 207 127;
+  --c-success-tint: 20 48 31;
+  --c-warning: 240 166 58;
+  --c-warning-tint: 51 36 15;
+  --c-danger: 240 106 122;
+  --c-danger-tint: 58 26 32;
+  --c-info: 111 159 224;
+  --c-info-tint: 22 37 54;
+  --c-gold: 240 192 64;
+  --c-gold-tint: 48 40 15;
+}
